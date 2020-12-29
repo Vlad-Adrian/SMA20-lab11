@@ -17,33 +17,30 @@
         android:layout_height="wrap_content"
         android:hint="No payments found for this month!" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/ttStatus"
-        android:layout_above="@+id/listPayments"
-        android:layout_margin="5dp">
-
         <TextView
             android:id="@+id/tLoginDetail"
+            android:layout_below="@+id/ttStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13sp"/>
+            android:textSize="12sp"
+            android:hint="LoginDetail" />
         <TextView
             android:id="@+id/tUser"
+            android:layout_below="@+id/tLoginDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13sp"/>
+            android:textSize="12sp"
+            android:hint="User" />
 
-    </LinearLayout>
+
+
 
     <ListView
         android:id="@+id/listPayments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/lBottom"
-        android:layout_below="@+id/ttStatus" />
+        android:layout_below="@+id/tUser" />
 
     <LinearLayout
         android:id="@+id/lBottom"
